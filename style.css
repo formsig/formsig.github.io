@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,400');
+
+* {
+    font-family: Titillium Web;
+    font-size: 17.6px;
+}
+
+.s1 {
+    background-color: #bcd6ff;
+}
+
+.s2 {
+    background-color: #efffed;
+}
+
+.bg-acc {
+    background-color: #fff9ef;
+}
+
+.account {
+    font-size: 80px;
+    margin-top: 3.6%;
+    margin-bottom: 13.3%;
+    font-weight: 200;
+    user-select: none;
+    transition: all 600ms;
+}
+
+.title, .title span {
+    font-family: Arial;
+    font-size: 100px;
+    transition: all 600ms;
+    user-select: none;
+}
+
+.badge-success, .badge-primary {
+    font-size: 14px !important;
+    vertical-align: top;
+}
+
+input {
+    border: 1px solid #e0e0e0;
+    border-radius: 3.5px;
+    padding: 6px;
+    transition: all 600ms;
+}
+
+.margin-left {
+    margin-left: 35px;
+}
+
+@media screen and (max-width: 800px) {
+    .title, .title span {
+        font-size: 55px;
+    }
+    
+    .account {
+        font-size: 65px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title, .title span {
+        font-size: 40px;
+    }
+    
+    .account {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .title, .title span {
+        font-size: 35px;
+    }
+    
+    .account {
+        font-size: 45px;
+    }
+}
