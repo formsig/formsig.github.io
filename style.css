@@ -29,12 +29,13 @@
 .title, .title span {
     font-family: Arial;
     font-size: 100px;
+    font-weight: 100;
     transition: all 600ms;
     user-select: none;
 }
 
 .badge-success, .badge-primary {
-    font-size: 14px !important;
+    font: 16.2px Titillium web !important;
     vertical-align: top;
 }
 
@@ -51,17 +52,21 @@ input {
 
 @media screen and (max-width: 800px) {
     .title, .title span {
-        font-size: 55px;
+        font-size: 105px;
     }
     
     .account {
         font-size: 65px;
     }
+    
+    .badge-success, .badge-primary {
+        font-size: 23px !important;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .title, .title span {
-        font-size: 40px;
+        font-size: 65px;
     }
     
     .account {
@@ -69,20 +74,12 @@ input {
     }
     
     .badge-success, .badge-primary {
-        font-size: 9.9px !important;
+        font-size: 14.5px !important;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .title, .title span {
-        font-size: 35px;
-    }
-    
     .account {
         font-size: 45px;
-    }
-    
-    .badge-success, .badge-primary {
-        margin-top: 3%;
     }
 }
