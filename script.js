@@ -67,7 +67,7 @@ $(document).ready(function() {
             
             $('body').hide('slow');
             function replace() {
-                $('body').replaceWith("<body><div class='text-center'><h1 class='account'>Your account</h1><h2 class='mt-4 text-center text-primary'>Hello, " + firstInVal + "!</h2><br><p class='time'>Time: </p><button class='mt-3 btn btn-danger px-4'>Exit</button></div></body>");
+                $('body').replaceWith("<body><div class='text-center'><h1 class='account'>Your account</h1><h2 class='mt-4 text-center text-primary'>Hello, " + firstInVal + "!</h2><br><p class='time'>Time: </p><button class='mt-3 btn btn-danger px-4'>Sign out</button></div></body>");
                 $('html').addClass('bg-acc');
                 
                 $('.btn-danger').click(function() {
@@ -134,7 +134,7 @@ $(document).ready(function() {
             if( firstInVal == login && secondInVal == password ) {
                 $('body').hide('slow');
                 function replace() {
-                    $('body').replaceWith("<body><div class='text-center'><h1 class='account'>Your account</h1><h2 class='mt-4 text-center text-primary'>Hello, " + firstInVal + "!</h2><br><p class='time'>Time: </p><button class='mt-3 btn btn-danger px-4'>Exit</button></div></body>");
+                    $('body').replaceWith("<body><div class='text-center'><h1 class='account'>Your account</h1><h2 class='mt-4 text-center text-primary'>Hello, " + firstInVal + "!</h2><br><p class='time'>Time: </p><button class='mt-3 btn btn-danger px-4'>Sign out</button></div></body>");
                     $('html').addClass('bg-acc');
 
                     $('.btn-danger').click(function() {
@@ -173,7 +173,7 @@ $(document).ready(function() {
     
     if('cabinetL' in localStorage) {
         var login = localStorage.getItem('cabinetL');
-        $('body').replaceWith("<body><div class='text-center'><h1 class='account'>Your account</h1><h2 class='mt-4 text-center text-primary'>Hello, " + login + "!</h2><br><p class='time'>Time: </p><button class='mt-3 btn btn-danger px-4'>Exit</button></div></body>");
+        $('body').replaceWith("<body><div class='text-center'><h1 class='account'>Your account</h1><h2 class='mt-4 text-center text-primary'>Hello, " + login + "!</h2><br><p class='time'>Time: </p><button class='mt-3 btn btn-danger px-4'>Sign out</button></div></body>");
         $('html').addClass('bg-acc');
     }
     
