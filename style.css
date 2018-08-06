@@ -29,9 +29,12 @@
 .title, .title span {
     font-family: Arial;
     font-size: 100px;
-    font-weight: 100;
     transition: all 600ms;
     user-select: none;
+}
+
+.title span {
+    font-weight: 100;
 }
 
 .badge-success, .badge-primary {
