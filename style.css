@@ -67,6 +67,10 @@ input {
     .account {
         font-size: 50px;
     }
+    
+    .badge-success, .badge-primary {
+        font-size: 9.9px !important;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -76,5 +80,9 @@ input {
     
     .account {
         font-size: 45px;
+    }
+    
+    .badge-success, .badge-primary {
+        margin-top: 3%;
     }
 }
