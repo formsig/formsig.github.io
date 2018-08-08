@@ -12,11 +12,15 @@
 .colorBadgeTopS {
     color: #578be0;
     user-select: none;
+    display: none;
+    font-size: 26.6px;
 }
 
 .colorBadgeTopL {
     color: #7eb752;
     user-select: none;
+    display: none;
+    font-size: 26.6px;
 }
 
 .s2 {
@@ -36,15 +40,12 @@
     transition: all 600ms;
 }
 
-.title, .title span {
+.title {
     font-family: Arial;
     font-size: 100px;
     transition: all 600ms;
     user-select: none;
-}
-
-.title span {
-    font-weight: 100;
+    filter: opacity(0);
 }
 
 .badge-success, .badge-primary {

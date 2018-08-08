@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    $('.colorBadgeTopS, .colorBadgeTopL').fadeIn(1500).fadeOut(4000);
+    function showTitle() {
+        $('.title').css('filter', 'opacity(100%)');
+    }
+    setTimeout(showTitle, 5500);
+    
     $('#fullpage').fullpage({
         anchors: ['block1', 'block2', 'block3', 'block4'],
         menu: '#menu',
