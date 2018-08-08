@@ -9,6 +9,16 @@
     background-color: #bcd6ff;
 }
 
+.colorBadgeTopS {
+    color: #578be0;
+    user-select: none;
+}
+
+.colorBadgeTopL {
+    color: #7eb752;
+    user-select: none;
+}
+
 .s2 {
     background-color: #efffed;
 }
