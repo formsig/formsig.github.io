@@ -56,8 +56,9 @@ $(document).ready(function() {
     $('.btn-success').click(function() {
         var ls = localStorage.getItem('cabinetLS');
         var secondIn = $('.secondInput').val();
+        var firstInValLength = $('.firstInput').val().length;
         var passCheckVal = $('.passCheck').val();
-        if( $( '.firstInput' ).val()  && $('.secondInput').val() && $( '.firstInput' ).val() !== ls && secondIn === passCheckVal) {
+        if( $( '.firstInput' ).val()  && $('.secondInput').val() && $( '.firstInput' ).val() !== ls && secondIn === passCheckVal && firstInValLength < 12 ) {
             var firstInVal = $('.firstInput').val();
             var secondInVal = $('.secondInput').val();
             localStorage.setItem('cabinetL', firstInVal);
