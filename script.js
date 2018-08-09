@@ -9,9 +9,8 @@ $(document).ready(function() {
         if($('.ss').hasClass('active')) {
               $( ".contentS2" ).animate({
                 opacity: 1,
-                width: [ "show", "swing" ],
-                height: "show"
-              }, 1250);
+                width: [ "show", "swing" ]
+              }, 870);
         }
     }
     setInterval(activeCheck, 1000);
@@ -65,7 +64,6 @@ $(document).ready(function() {
             $('.secondInput').css('background-color', 'white');
         }
     }
-    
     if( $('.btn-success').length ) {
         setInterval(passStrong, 800);
     }
