@@ -1,7 +1,9 @@
 $(document).ready(function() {
     $('.colorBadgeTopS, .colorBadgeTopL').fadeIn(1500).fadeOut(4000);
     function showTitle() {
-        $('.title').css('filter', 'opacity(100%)');
+        $('.title').animate({
+            opacity: 1,
+        }, 600);
     }
     setTimeout(showTitle, 5500);
     
