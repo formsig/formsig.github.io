@@ -9,8 +9,7 @@ $(document).ready(function() {
         if($('.ss').hasClass('active')) {
               $( ".contentS2" ).animate({
                 opacity: 1,
-                width: [ "show", "swing" ]
-              }, 870);
+              }, 1160);
         }
     }
     setInterval(activeCheck, 1000);
