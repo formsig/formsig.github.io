@@ -9,6 +9,11 @@
     background-color: #bcd6ff;
 }
 
+.contentS2 {
+    display: none;
+    opacity: 0;
+}
+
 .colorBadgeTopS {
     color: #578be0;
     user-select: none;
@@ -58,6 +63,10 @@ input {
     border-radius: 3.5px;
     padding: 6px;
     transition: all 600ms;
+}
+
+input {
+    outline: none;
 }
 
 .margin-left {

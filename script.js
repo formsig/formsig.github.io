@@ -5,6 +5,17 @@ $(document).ready(function() {
     }
     setTimeout(showTitle, 5500);
     
+    function activeCheck() {
+        if($('.ss').hasClass('active')) {
+              $( ".contentS2" ).animate({
+                opacity: 1,
+                width: [ "show", "swing" ],
+                height: "show"
+              }, 1250);
+        }
+    }
+    setInterval(activeCheck, 1000);
+    
     $('#fullpage').fullpage({
         anchors: ['block1', 'block2', 'block3', 'block4'],
         menu: '#menu',
