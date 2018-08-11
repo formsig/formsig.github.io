@@ -143,8 +143,10 @@ $(document).ready(function() {
             var firstInVal = $('.firstInput').val();
             var secondInVal = $('.secondInput').val();
             
-            localStorage.setItem('cabinetL', firstInVal);
-            
+            if(secondInVal === password) {
+                localStorage.setItem('cabinetL', firstInVal);
+            }
+                
             var login = localStorage.getItem('cabinetLS', firstInVal);
             var password = localStorage.getItem('cabinetP', secondInVal);
             
