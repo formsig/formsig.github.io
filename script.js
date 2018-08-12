@@ -142,13 +142,12 @@ $(document).ready(function() {
         if( $( '.firstInput' ).val() && $('.secondInput').val() ) {
             var firstInVal = $('.firstInput').val();
             var secondInVal = $('.secondInput').val();
+            var password = localStorage.getItem('cabinetP', secondInVal);
+            var login = localStorage.getItem('cabinetLS', firstInVal);
             
-            if(secondInVal === password) {
+            if(secondInVal === password && firstInVal === login) {
                 localStorage.setItem('cabinetL', firstInVal);
             }
-                
-            var login = localStorage.getItem('cabinetLS', firstInVal);
-            var password = localStorage.getItem('cabinetP', secondInVal);
             
             if( firstInVal == login && secondInVal == password ) {
                 $('body').hide('slow');
